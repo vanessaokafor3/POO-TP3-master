@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registro.RegistController">
+   <center>
+      <AnchorPane prefHeight="383.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="410.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../F.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="professorbutton" layoutX="143.0" layoutY="117.0" mnemonicParsing="false" onAction="#teacherButtonOnAction" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" text="Professor">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../teacher.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="estudantebutton" layoutX="224.0" layoutY="287.0" mnemonicParsing="false" onAction="#funcionarioButtonOnAction" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" text="Funcionário">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../employee.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="funcionariobutton" layoutX="326.0" layoutY="50.0" mnemonicParsing="false" onAction="#alunoButtonOnAction" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" text="Aluno">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../write.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
